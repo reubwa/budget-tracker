@@ -1,0 +1,34 @@
+
+<div class="sidebar">
+    <img src="logo.png" style="height: 72px;width: 72px;">
+    <div class="sidebar-opt" onclick="location.assign('index.php')" id="home">
+        <span class="material-symbols-rounded">home</span>
+        Home
+    </div>
+    <div class="sidebar-opt" onclick="location.assign('accounts.php')">
+        <span class="material-symbols-rounded">account_balance_wallet</span>
+        Accounts
+    </div>
+    <div class="sidebar-opt" onclick="location.assign('budgets.php')">
+        <span class="material-symbols-rounded">receipt_long</span>
+        Budgets
+    </div>
+    <div class="sidebar-opt" onclick="location.assign('goals.php')" style="background-color: #25f69b;">
+        <span class="material-symbols-rounded">flag</span>
+        Goals
+    </div>
+    <div class="sidebar-opt" onclick="location.assign('savings.php')">
+        <span class="material-symbols-rounded">savings</span>
+        Savings
+    </div>
+    <div class="sidebar-opt" onclick="location.assign('payments.php')">
+        <span class="material-symbols-rounded">payments</span>
+        Payments
+    </div>
+</div>
+<script>
+    var loc = window.location.href;
+    if(loc.endsWith("index.php")){
+        document.getElementById('home').style.backgroundColor = '#25f69b';
+    }
+</script>
